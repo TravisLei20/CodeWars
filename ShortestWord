@@ -1,0 +1,14 @@
+function findShort(s)
+{
+  var array = s.split(" ");
+  var shortestWordLength = array[0].length;
+  for (var i = 0; i < array.length; i++)
+    {
+      var wordLength = array[i].length;
+      if (shortestWordLength > wordLength)
+        {
+          shortestWordLength = wordLength;
+        }
+    }
+  return shortestWordLength;
+}
